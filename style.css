@@ -1,0 +1,98 @@
+/* Body Styling */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%); /* Gradient background */
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container Styling */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slight transparency */
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+/* Headings Styling */
+h1, h2 {
+    color: #444;
+    font-weight: bold;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+/* Form Styling */
+form {
+    background-color: #f7f7f7;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Label Styling */
+label {
+    display: block;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+/* Input and Textarea Styling */
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input:focus, textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+/* Button Styling */
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Resume Preview Styling */
+#resume-preview {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Slightly larger shadow */
+}
+
+#preview-content {
+    margin-top: 25px;
+    font-size: 1.1rem;
+    color: #555;
+}

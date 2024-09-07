@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Interactive Resume Builder</h1>
+        
+        <form id="resume-form">
+            <h2>Personal Information</h2>
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" required>
+            
+            <p id="error-message" style="color: red;"></p>
+            
+            <h2>Work Experience</h2>
+            <label for="jobTitle">Job Title:</label>
+            <input type="text" id="jobTitle" name="jobTitle">
+            
+            <label for="companyName">Company Name:</label>
+            <input type="text" id="companyName" name="companyName">
+            
+            <label for="workDuration">Duration:</label>
+            <input type="text" id="workDuration" name="workDuration">
+            
+            <h2>Skills</h2>
+            <label for="skills">Enter Skills:</label>
+            <textarea id="skills" name="skills"></textarea>
+            
+            <button type="button" onclick="generateResume()">Generate Resume</button>
+            <!-- Edit button initially hidden -->
+            <button type="button" id="edit-button" style="display: none;" onclick="editForm()">Edit</button>
+        </form>
+        
+        <div id="resume-preview">
+            <h2>Resume Preview</h2>
+            <div id="preview-content">
+                <!-- Resume content will be dynamically added here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
